@@ -7,7 +7,7 @@ as (
         , min(transaction_datetime)::date as first_payment_date
     from skyeng_db.payments
     where status_name = 'success'
-        and operation_name = 'Ïîêóïêà óðîêîâ'
+        and operation_name = 'Покупка уроков'
     group by user_id
   )
 
